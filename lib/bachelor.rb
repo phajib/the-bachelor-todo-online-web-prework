@@ -21,8 +21,8 @@ end
 def get_contestant_name(data, occupation)
 data.each do |season, season_array|
   season_array.each do |into_array|
-     if into_array[:occupation] == occupation
-       return into_array[:name]
+     if into_array["occupation"] == occupation
+       return into_array["name"]
      end
   end
 end
