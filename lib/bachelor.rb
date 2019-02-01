@@ -44,7 +44,7 @@ def get_average_age_for_season(data, season)
   data.each do |season, array|
     array.each do |cont_data|
       count += 1
-      age += array["age"].to_f
+      age += array["age"].to_i
     end
   end
   (age/count).round
